@@ -15,7 +15,7 @@ app.post('/webhook', (req, res) => {
         notificationCode: notificationCode
     };
 
-    axios.post('https://conect-pag-20230111.bubbleapps.io/version-test/api/1.1/wf/recebernotificacao2', jsonToSend)
+    axios.post('https://conect-pag-20230111.bubbleapps.io/api/1.1/wf/recebernotificacao2', jsonToSend)
         .then(response => {
             res.end();
         })
